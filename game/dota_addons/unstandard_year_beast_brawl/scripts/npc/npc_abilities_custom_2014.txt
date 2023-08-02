@@ -1,0 +1,450 @@
+
+// Dota Abilities Override File
+"DOTAAbilities"
+{
+	"Version"		"1"
+	
+	//=================================================================================================================
+	// Beast: Left Claw Attack
+	//============
+	"beast_swipe_right"
+	{
+    // General
+    //-------------------------------------------------------------------------------------
+    "BaseClass"             "ability_datadriven"
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+    "AbilityUnitTargetTeam" "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitDamageType" "DAMAGE_TYPE_PHYSICAL"
+	"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+	"AbilityTextureName"            "beast_claw"
+
+    // Stats
+    //-------------------------------------------------------------------------------------
+    "AbilityCastRange" "300"   // This will  also show a circle when hovering over the spell
+    "AbilityCastPoint" "1.3"   // Cast animation time
+    "AbilityCooldown"  "5"       
+ // "AbilityManaCost"  "50 100 150 200"
+    "AbilityDamage"    "750 1000 1250 1500"
+    "AOERadius" "500"  // This displays the AoE Helper, it doesn't have a real impact on the spell 
+
+    // Special
+    //-------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type" "FIELD_INTEGER"
+            "radius" "130"
+        }
+    }
+	
+    // Data Driven
+    //-------------------------------------------------------------------------------------
+    "OnAbilityPhaseStart"
+	{
+		"FireSound"
+		{
+				 "EffectName"		"CNY_Beast.AttackShort"
+				 "Target"			"CASTER"
+		}
+	}
+	
+	"OnSpellStart"
+    {
+        "Damage"
+        {
+            "Target"
+            {
+                "Center" "POINT"
+                "Radius" "%radius"
+                "Teams" "DOTA_UNIT_TARGET_TEAM_ENEMY"
+                "Types" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+            }
+            "Type" "DAMAGE_TYPE_MAGICAL"
+            "Damage" "%AbilityDamage"
+         }
+     }
+  }
+  
+  	//=================================================================================================================
+	// Beast: Left Claw Attack
+	//=================================================================================================================
+	"beast_swipe_left"
+	{
+    // General
+    //-------------------------------------------------------------------------------------
+    "BaseClass"             "ability_datadriven"
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+    "AbilityUnitTargetTeam" "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitDamageType" "DAMAGE_TYPE_PHYSICAL"
+	"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_2"
+	"AbilityTextureName"            "beast_claw"
+
+    // Stats
+    //-------------------------------------------------------------------------------------
+    "AbilityCastRange" "300"   // This will  also show a circle when hovering over the spell
+    "AbilityCastPoint" "1.3"   // Cast animation time
+    "AbilityCooldown"  "5"       
+ // "AbilityManaCost"  "50 100 150 200"
+    "AbilityDamage"    "750 1000 1250 1500"
+    "AOERadius" "500"  // This displays the AoE Helper, it doesn't have a real impact on the spell 
+
+    // Special
+    //-------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type" "FIELD_INTEGER"
+            "radius" "130"
+        }
+    }
+	
+    // Data Driven
+    //-------------------------------------------------------------------------------------
+    "OnAbilityPhaseStart"
+	{
+		"FireSound"
+		{
+				 "EffectName"		"CNY_Beast.AttackShort"
+				 "Target"			"CASTER"
+		}
+	}
+	
+	"OnSpellStart"
+    {
+        "Damage"
+        {
+            "Target"
+            {
+                "Center" "POINT"
+                "Radius" "%radius"
+                "Teams" "DOTA_UNIT_TARGET_TEAM_ENEMY"
+                "Types" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+            }
+            "Type" "DAMAGE_TYPE_MAGICAL"
+            "Damage" "%AbilityDamage"
+         }
+     }
+  }
+	//=================================================================================================================
+	// Ability: Year Beast Bash
+	//=================================================================================================================
+	"beast_bash"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------													// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"BaseClass"						"roshan_bash"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"AbilityTextureName"            "beast_bash_passive"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bash_chance"		"15"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_damage"		"50"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"stun_duration"		"1.65"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Beast: Dive
+	//=================================================================================================================
+	"beast_leap"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityCastAnimation"			"ACT_DOTA_LEAP_STUN"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"AbilityTextureName"	"beast_leap"
+		"MaxLevel"				"1"
+		"RequiredLevel"          "6"
+		"AnimationPlaybackRate"  "1.5"
+    	"AnimationIgnoresModelScale" "1"
+	
+		// Precache
+		//-------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"particle"					"particles/econ/generic/generic_aoe_explosion_sphere_1/generic_aoe_explosion_sphere_1.vpcf"
+			"soundfile"			"soundevents/game_sounds_cny.vsndevts"
+		}
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"0"
+		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+	
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"1.5"
+		"AbilityDuration"				"10.0"
+	
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+//		"AbilityManaCost"				"40 35 30 20"
+	
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"leap_distance"		"900"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"leap_speed"			"1500"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"leap_acceleration"	"7000.0"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"leap_radius"			"200"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"leap_damage"			"35"
+			}
+		}
+	
+		"OnSpellStart"
+		{
+			"FireSound"
+			{
+				"EffectName"	"CNY_Beast.AttackShort"
+				"Target"		"CASTER"
+			}
+			
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/heroes/hero_nian/leap.lua"
+				"Function"		"Leap"
+			}
+	
+			"ActOnTargets"
+			{
+				"Target"
+	            {
+	                "Center" "CASTER"
+	                "Radius" "%leap_radius"
+	                "Teams" "DOTA_UNIT_TARGET_TEAM_ENEMY" 
+	                "Types" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+	            }
+	
+	            "Action"
+	            {
+	            	"ApplyModifier"
+	            	{
+	            		"ModifierName"	"modifier_leap_datadriven"
+	            		"Target"		"TARGET"
+	            	}
+	            }
+			}
+	
+			"DelayedAction"
+			{
+				"Delay"		"%leap_distance / %leap_speed"
+	
+				"Action"
+				{
+					"ActOnTargets"
+					{
+						"Target"
+			            {
+			                "Center" "CASTER"
+			                "Radius" "%leap_radius"
+			                "Teams" "DOTA_UNIT_TARGET_TEAM_ENEMY" 
+			                "Types" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+			            }
+	
+			            "Action"
+			            {
+			            	"ApplyModifier"
+			            	{
+			            		"ModifierName"	"modifier_leap_datadriven"
+			            		"Target"		"TARGET"
+			            	}
+			            }
+					}
+				}
+			}
+		}
+	
+		"Modifiers"
+		{
+			"modifier_leap_datadriven"
+			{
+				"Duration"	"%leap_duration"
+	
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%leap_speedbonus_as"
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%leap_speedbonus"
+				}
+			}
+		}
+	}
+	// Need to fix attachment point for particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace_hit.vpcf
+	"beast_spiked_carapace"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_AURA"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"				"1"
+		"AbilityTextureName"			"nyx_assassin_spiked_carapace"
+		"MaxLevel"						"4"
+	
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"23 20 17 14"
+		"AbilityCastPoint"				"0 0 0 0"
+	
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+	//	"AbilityManaCost"				"40 40 40 40"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"reflect_duration"			"4" // 2.25"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"stun_duration"				"3" // 0.6 1.2 1.8 2.4"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_damage"				"0"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_armor"				"0"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_intellect"				"0"
+			}
+		}
+		
+		// Data driven
+		//-------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"particle"						"particles/generic_gameplay/generic_stunned.vpcf"
+			"particle"						"particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace.vpcf"
+			"particle"						"particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace_hit.vpcf"
+		}
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"				"heroes/hero_nian/spiked_carapace.lua"
+				"Function"					"spiked_carapace_init"
+			}
+			
+			"ApplyModifier"
+			{
+				"Target"					"CASTER"
+				"ModifierName"				"modifier_spiked_carapace_buff_datadriven"
+			}
+		}
+		
+		"Modifiers"
+		{
+			"modifier_spiked_carapace_buff_datadriven"
+			{
+				"IsBuff"				"0"
+				"IsPurgable"			"0"
+			
+				"Duration"				"%reflect_duration"
+				
+				"EffectName"			"particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace.vpcf"
+				
+				"OnTakeDamage"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"heroes/hero_nian/spiked_carapace.lua"
+						"Function"		"spiked_carapace_reflect"
+						"DamageTaken"	"%attack_damage"
+					}
+				}
+			}
+			
+			"modifier_spiked_carapaced_stun_datadriven"
+			{
+				"IsDebuff"				"1"
+			
+				"Duration"				"%stun_duration"
+				
+				"OverrideAnimation"		"ACT_DOTA_DISABLED"
+				
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"Target"			"TARGET"
+						"EffectName"		"particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace_hit.vpcf"
+						"EffectAttachType"	"follow_origin"
+						"ControlPoints"
+						{
+							"02"			"%stun_duration %stun_duration %stun_duration"
+						}
+					}
+				
+					"AttachEffect"
+					{
+						"Target"			"TARGET"
+						"EffectName"		"particles/generic_gameplay/generic_stunned.vpcf"
+						"EffectAttachType"	"follow_overhead"
+					}
+				}
+				
+				"States"
+				{
+					"MODIFIER_STATE_STUNNED"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+		}
+	}
+}

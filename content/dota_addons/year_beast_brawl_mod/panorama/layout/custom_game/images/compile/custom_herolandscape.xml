@@ -1,7 +1,0 @@
-<root>
-	<Panel>
-		<Image src="file://{images}/heroes/npc_dota_hero_viper.png" />>
-		<Image src="file://{images}/heroes/npc_dota_hero_visage.png" />>
-		<Image src="file://{images}/heroes/npc_dota_hero_phoenix.png" />>
-	</Panel>
-</root>

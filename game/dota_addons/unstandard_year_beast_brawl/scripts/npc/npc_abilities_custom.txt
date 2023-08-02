@@ -1,0 +1,1834 @@
+
+"DOTAAbilities"
+{
+
+
+//=================================================================================================================
+// Combat Path Level 1
+//=================================================================================================================
+	"combat_lvl1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityType"				"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"beast_claw"
+		"MaxLevel"				"1"
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"			"0"
+		"AbilityCastPoint"			"0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"			"2.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"			"0"
+
+		"OnSpellStart"
+		{
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"combat_lvl1"
+			}
+			"AddAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_bash"
+			}
+			"LevelUpAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_bash"
+			}
+		}
+	}
+//=================================================================================================================
+// Speed Path Level 1
+//=================================================================================================================
+	"speed_lvl1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityType"				"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"	
+		"AbilityTextureName"   			"beast_leap"
+		"MaxLevel"				"1"
+	
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"			"0"
+		"AbilityCastPoint"			"0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"			"2.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"			"0"
+
+
+		"OnSpellStart"
+		{
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"speed_lvl1"
+			}
+			"AddAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_attack_speed_aura"
+			}
+			"LevelUpAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_attack_speed_aura"
+			}
+		}
+	}
+
+//=================================================================================================================
+// Support Path Level 1
+//=================================================================================================================
+	"support_lvl1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityType"				"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"beast_bash"
+		"MaxLevel"				"1"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"			"0"
+		"AbilityCastPoint"			"0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"			"2.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"			"0"
+
+		"OnSpellStart"
+		{
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"support_lvl1"
+			}
+			"AddAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_healing_aura"
+			}
+			"LevelUpAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_healing_aura"
+			}
+		}
+	}
+
+//=================================================================================================================
+// Combat Path Level 2
+//=================================================================================================================
+	"combat_lvl2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityType"				"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"beast_claw"
+		"MaxLevel"				"1"
+		"RequiredLevel"	"6"
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"			"0"
+		"AbilityCastPoint"			"0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"			"2.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"			"0"
+
+		"OnSpellStart"
+		{
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"combat_lvl2"
+			}
+			"AddAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_spiked_carapace"
+			}
+			"LevelUpAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_spiked_carapace"
+			}
+			"AddAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_berserkers_call"
+			}
+			"LevelUpAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_berserkers_call"
+			}
+		}
+	}
+	
+//=================================================================================================================
+// Speed Path Level 2
+//=================================================================================================================
+	"speed_lvl2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityType"				"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"beast_leap"
+		"MaxLevel"				"1"
+		"RequiredLevel"	"6"
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"			"0"
+		"AbilityCastPoint"			"0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"			"2.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"			"0"
+
+		"OnSpellStart"
+		{
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"speed_lvl2"
+			}
+			"AddAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_stampede"
+			}
+			"LevelUpAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_stampede"
+			}
+		}
+	}
+	
+//=================================================================================================================
+// Support Path Level 2
+//=================================================================================================================
+	"support_lvl2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityType"				"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"beast_leap"
+		"MaxLevel"				"1"
+		"RequiredLevel"	"6"
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"			"0"
+		"AbilityCastPoint"			"0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"			"2.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"			"0"
+
+		"OnSpellStart"
+		{
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"support_lvl2"
+			}
+			"AddAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_truesight"
+			}
+			"LevelUpAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_truesight"
+			}
+			"AddAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_smoke_aura"
+			}
+			"LevelUpAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_smoke_aura"
+			}
+		}
+	}
+	
+//=================================================================================================================
+// Combat Path Level 3
+//=================================================================================================================
+	"combat_lvl3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityType"				"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"beast_claw"
+		"MaxLevel"				"1"
+		"RequiredLevel"	"12"
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"			"0"
+		"AbilityCastPoint"			"0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"			"2.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"			"0"
+
+		"OnSpellStart"
+		{
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"combat_lvl3"
+			}
+			"AddAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_greater_hex"
+			}
+			"LevelUpAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_greater_hex"
+			}
+		}
+	}
+	
+//=================================================================================================================
+// Beast Ultimate
+//=================================================================================================================
+	"beast_ulti"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityType"				"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"beast_aegis"
+		"MaxLevel"				"1"
+		"RequiredLevel"					"18"
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"			"0"
+		"AbilityCastPoint"			"0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"			"2.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"			"0"
+
+		"OnSpellStart"
+		{
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_ulti"
+			}
+			"AddAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_aegis"
+			}
+			"LevelUpAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_aegis"
+			}
+		}
+	}
+	
+	//=================================================================================================================
+	// Beast: Bash
+	//=================================================================================================================
+	"beast_bash"
+	{
+		"BaseClass"	"roshan_bash"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"AbilityTextureName"	"beast_claw_passive"
+		"AbilitySpecial"
+		"MaxLevel"				"1"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bash_chance"	"15"
+			}
+
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_damage"	"50"
+			}
+
+			"03"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"stun_duration"	"1.65"
+			}
+
+		}
+
+	}
+
+	//=================================================================================================================
+	// Beast: Attack Speed Aura
+	//=================================================================================================================
+	"beast_attack_speed_aura"
+	{
+		"BaseClass"	"luna_lunar_blessing"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_AURA | DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityTextureName"	"beast_leap_passive"
+		"MaxLevel"	"1"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"900"
+			}
+
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_damage"	"30"
+			}
+
+		}
+
+	}
+
+	//=================================================================================================================
+	// Beast: Truesight
+	//=================================================================================================================
+	"beast_truesight"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"beast_bash"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AURA"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCastRange"	"1000"
+		"AbilityCastPoint"	"0"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_5"	
+		"MaxLevel"	"1"
+		"RequiredLevel"	"12"
+		"AbilityCooldown"	"35.0"
+		"AOERadius"	"%radius"
+		
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"ModifierName"	"modifier_truesight"
+				"Target"
+				{
+					"Center"	"CASTER"
+					"Radius"	"%radius"
+					"Teams"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+					"Types"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+				}
+
+			}
+			"RunScript"
+			{
+				"ScriptFile"			"items/item_arcane_boots.lua"
+				"Function"				"item_arcane_boots_datadriven_on_spell_start"
+				"ReplenishRadius"		"%replenish_radius"
+				"ReplenishAmount"		"%replenish_amount"
+			}
+			"RunScript"
+			{
+				"ScriptFile"			"items/item_mekansm.lua"
+				"Function"				"item_mekansm_datadriven_on_spell_start"
+				"HealAmount"			"%heal_amount"
+				"HealRadius"			"%heal_radius"
+			}
+			"FireSound"
+			{
+			//	"EffectName"	"CNY_Beast.GreaterHex"
+			}
+		}
+
+			"Modifiers"
+			{
+				"modifier_truesight"
+				{
+//					"EffectName"	"particles/econ/items/shadow_shaman/shadow_shaman_sheepstick/shadowshaman_voodoo_b_sheepstick.vpcf"
+//					"ModelName"	"models/props_gameplay/pig.vmdl"
+					"Duration"	"%duration"
+					"Properties"
+					{
+//						"MODIFIER_PROPERTY_MOVESPEED_BASE_OVERRIDE"	"%movespeed"
+					}
+
+					"States"
+					{
+						"MODIFIER_STATE_INVISIBLE"	"MODIFIER_STATE_VALUE_DISABLED"
+					}
+				}
+				"modifier_item_arcane_boots_datadriven"
+				{
+					"Passive"			"1"
+					"IsHidden"			"1"
+					"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+			
+					"Properties"
+					{
+//						"MODIFIER_PROPERTY_MOVESPEED_BONUS_UNIQUE"		"%bonus_movement"
+						"MODIFIER_PROPERTY_MANA_BONUS"					"%bonus_mana"
+					}
+				}
+				"modifier_item_mekansm_datadriven"
+				{
+					"Passive"			"1"
+					"IsHidden"			"1"
+					"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+			
+					"Properties"
+					{
+						"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%bonus_all_stats"
+						"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"			"%bonus_all_stats"
+						"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_all_stats"
+						"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"		"%bonus_armor"
+					}
+				}
+				"modifier_item_mekansm_datadriven_aura_emitter"
+				{
+					"Passive"				"1"
+					"IsHidden"				"1"
+			
+					"Aura" 					"modifier_item_mekansm_datadriven_aura"
+					"Aura_Radius" 			"%aura_radius"
+					"Aura_Teams" 			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+					"Aura_Types" 			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+					"Aura_Flags" 			"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+					"Aura_ApplyToCaster" 	"1"
+				}
+				"modifier_item_mekansm_datadriven_aura"
+				{
+					"Passive"			"0"
+					"IsHidden"			"0"
+			
+					"Properties"
+					{
+						"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"		"%aura_health_regen"
+					}
+				}
+				"modifier_item_mekansm_datadriven_heal_armor"
+				{
+					"Duration"			"%heal_armor_duration"
+					"Passive"			"0"
+					"IsHidden"			"0"
+					"IsBuff"			"1"
+					"IsDebuff"			"0"
+					"IsPurgable"		"1"
+					"TextureName"		"item_buckler"
+				
+					"Properties"
+					{
+						"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_UNIQUE_ACTIVE"		"%heal_bonus_armor"
+					}
+				}
+				//Placed onto units when healed by Mekansm, and prevents further heals from Mekansm while it exists.
+				//A separate modifier is used because the armor buff from Restore can be dispelled, but this can't.
+				"imodifier_item_mekansm_datadriven_heal_debuff"
+				{
+					"Duration"			"heal_armor_duration"
+					"Passive"			"0"
+					"IsHidden"			"1"
+					"IsBuff"			"0"
+					"IsDebuff"			"1"
+					"IsPurgable"		"0"
+				}
+			}
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"movespeed"	"0"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"35.0"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"1100"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana"			"250"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"replenish_radius"		"750"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"replenish_amount"		"135"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movement"		"55"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all_stats"		"5"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_armor"			"5"
+			}
+			"10"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_radius"			"750"
+			}
+			"11"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_health_regen"		"4"
+			}
+			"12"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"heal_amount"			"250"
+			}
+			"13"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"heal_radius"			"750"
+			}
+			"14"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"heal_bonus_armor"		"2"
+			}
+			"15"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"heal_armor_duration"	"25.0"
+			}
+		}
+	
+	}
+	
+	//=================================================================================================================
+	// Beast: Healing Aura
+	//=================================================================================================================
+	"beast_healing_aura"
+	{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_AURA | DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"beast_bash_passive"
+		"MaxLevel"	"1"
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"ModifierName"	"aura_health_regen"
+				"Target"
+				{
+					"Center"	"CASTER"
+					"Radius"	"%health_radius"
+					"Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+					"Types"	"DOTA_UNIT_TARGET_HERO"
+				}
+
+			}
+
+		}
+
+		"Modifiers"
+		{
+			"fx_heal_aura"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"Target"	"CASTER"
+						"EffectName"	"particles/units/heroes/hero_witchdoctor/witchdoctor_voodoo_restoration.vpcf"
+						"EffectAttachType"	"follow_origin"
+						"ControlPoints"
+						{
+							"00"	"0 0 0"
+							"01"	"%health_radius 0 0"
+							"02"	"0 0 -200"
+						}
+
+					}
+
+				}
+
+			}
+
+			"aura_health_regen"
+			{
+				"IsHidden"	"0"
+				"Passive"	"1"
+				"Aura"	"health_regen"
+				"Aura_Radius"	"%health_radius"
+				"Aura_Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+				"Aura_Types"	"DOTA_UNIT_TARGET_HERO"
+				"Aura_ApplyToCaster"	"0"
+			}
+
+			"health_regen"
+			{
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"%health_regen_amount"
+				}
+
+			}
+
+		}
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"health_radius"	"1100"
+			}
+
+			"02"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"health_regen_amount"	"10.0"
+			}
+
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"armor_buff"	"0"
+			}
+
+		}
+
+	}
+
+	
+	//=================================================================================================================
+	// Beast: Stampede
+	//=================================================================================================================
+	"beast_stampede"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityType"	"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityTextureName"	"beast_leap"
+		"RequiredLevel"	"6"
+		"MaxLevel"	"1"
+		"AbilityCooldown"	"60.0"
+		"AbilityModifierSupportValue"	"0.2"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"3.00"
+			}
+
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"base_damage"	"0"
+			}
+
+			"03"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"strength_damage"	"0.0 0.0 0.0"
+			}
+
+			"04"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"slow_duration"	"0.0"
+			}
+
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"500"
+			}
+
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"slow_movement_speed"	""
+			}
+
+		}
+
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_centaur.vsndevts"
+			"particle"	"particles/units/heroes/hero_centaur/centaur_stampede_overhead.vpcf"
+			"particle"	"particles/units/heroes/hero_centaur/centaur_stampede.vpcf"
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"heroes/hero_nian/stampede.lua"
+				"Function"	"StampedeStart"
+			}
+
+			"ApplyModifier"
+			{
+				"Target"
+				{
+					"Center"	"CASTER"
+					"Radius"	"GLOBAL"
+					"Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+					"Types"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+					"ExcludeTypes"	"DOTA_UNIT_TARGET_BASIC"
+				}
+
+				"ModifierName"	"modifier_stampede"
+			}
+
+		}
+
+		"Modifiers"
+		{
+			"modifier_stampede"
+			{
+				"Duration"	"%duration"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"	"50000"
+				}
+
+				"States"
+				{
+					"MODIFIER_STATE_NO_UNIT_COLLISION"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+
+				"EffectName"	"particles/units/heroes/hero_centaur/centaur_stampede.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"EffectName"	"particles/units/heroes/hero_centaur/centaur_stampede_overhead.vpcf"
+						"EffectAttachType"	"follow_overhead"
+						"Target"	"TARGET"
+					}
+
+				}
+
+				"OnUnitMoved"
+				{
+					"Random"
+					{
+						"Chance"	"3.22"
+						"OnSuccess"
+						{
+							"FireSound"
+							{
+								"EffectName"	"Hero_Centaur.Stampede.Movement"
+								"Target"	"UNIT"
+							}
+
+						}
+
+					}
+
+				}
+
+				"Aura"	"modifier_stampede_collision"
+				"Aura_Radius"	"%radius"
+				"Aura_Teams"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+				"Aura_Types"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+			}
+
+			"modifier_stampede_collision"
+			{
+				"IsHidden"	"1"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"heroes/hero_nian/stampede.lua"
+						"Function"	"Stampede"
+					}
+
+					"FireSound"
+					{
+						"EffectName"	"Hero_Centaur.Stampede.Stun"
+						"Target"	"TARGET"
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	//=================================================================================================================
+	// Beast: Berserker's Call
+	//=================================================================================================================
+	"beast_berserkers_call"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityTextureName"	"beast_claw"
+		"AbilityCastAnimation"	"ACT_DOTA_AREA_DENY"
+		"MaxLevel"	"1"
+		"RequiredLevel"	"6"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_axe.vsndevts"
+			"particle"	"particles/units/heroes/hero_axe/axe_beserkers_call_owner.vpcf"
+			"particle"	"particles/status_fx/status_effect_beserkers_call.vpcf"
+		}
+
+		"AbilityCastPoint"	"0.3 0.3 0.3 0.3"
+		"AbilityCooldown"	"10"
+		"AbilityDamage"	"0 0 0 0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"300"
+			}
+
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_armor"	"0"
+			}
+
+			"03"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"2.5"
+			}
+
+		}
+
+		"OnSpellStart"
+		{
+			"FireSound"
+			{
+				"EffectName"	"Hero_Axe.Berserkers_Call"
+				"Target"	"CASTER"
+			}
+
+			"FireEffect"
+			{
+				"EffectName"	"particles/units/heroes/hero_axe/axe_beserkers_call_owner.vpcf"
+				"EffectAttachType"	"start_at_customorigin"
+				"ControlPointEntities"
+				{
+					"CASTER"	"follow_origin"
+					"CASTER"	"follow_origin"
+					"CASTER"	"follow_origin"
+				}
+
+			}
+
+			"ApplyModifier"
+			{
+				"ModifierName"	"modifier_berserkers_call_caster_datadriven"
+				"Target"	"CASTER"
+				"Duration"	"%duration"
+			}
+
+			"ActOnTargets"
+			{
+				"Target"
+				{
+					"Center"	"CASTER"
+					"Radius"	"%radius"
+					"Teams"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+					"Types"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+					"Flags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+				}
+
+				"Action"
+				{
+					"ApplyModifier"
+					{
+						"ModifierName"	"modifier_beserkers_call_enemy_datadriven"
+						"Target"	"TARGET"
+						"Duration"	"%duration"
+					}
+
+				}
+
+			}
+
+		}
+
+		"Modifiers"
+		{
+			"modifier_berserkers_call_caster_datadriven"
+			{
+				"IsPurgable"	"0"
+				"IsBuff"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"%bonus_armor"
+				}
+
+			}
+
+			"modifier_beserkers_call_enemy_datadriven"
+			{
+				"IsPurgable"	"0"
+				"IsDebuff"	"1"
+				"StatusEffectName"	"particles/status_fx/status_effect_beserkers_call.vpcf"
+				"StatusEffectPriority"	"10"
+				"ThinkInterval"	"0.1"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"heroes/hero_nian/berserkers_call.lua"
+						"Function"	"BerserkersCall"
+					}
+
+				}
+
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"heroes/hero_nian/berserkers_call.lua"
+						"Function"	"BerserkersCallEnd"
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	//=================================================================================================================
+	// Beast: Refresher Aura !!!FULLY BROKEN!!! 
+	//=================================================================================================================
+	"beast_refresher_aura"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_AURA | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
+	//	"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityTextureName"	"beast_leap"
+		"AbilityCastAnimation"	"ACT_DOTA_AREA_DENY"
+		"MaxLevel"	"1"
+		"RequiredLevel"	"6"
+		"precache"
+		{
+	//		"soundfile"	"soundevents/game_sounds_heroes/game_sounds_axe.vsndevts"
+	//		"particle"	"particles/units/heroes/hero_axe/axe_beserkers_call_owner.vpcf"
+	//		"particle"	"particles/status_fx/status_effect_beserkers_call.vpcf"
+		}
+
+		"AbilityCastPoint"	"0.3 0.3 0.3 0.3"
+		"AbilityCooldown"	"10"
+		"AbilityDamage"	"0 0 0 0"
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"							"FIELD_INTEGER"
+			"bonus_health_regen"				"5"
+		}
+		"02"
+		{
+			"var_type"							"FIELD_INTEGER"
+			"bonus_mana_regen_percentage"		"200"
+		}
+		"03"
+		{
+			"var_type"							"FIELD_INTEGER"
+			"bonus_damage"						"40"
+		}
+		"04"
+		{
+			"var_type"							"FIELD_INTEGER"
+			"bonus_intelligence"				"6"
+		}
+		"05"
+		{
+			"var_type"							"FIELD_INTEGER"
+			"bonus_attack_speed"				"10"
+		}
+	}
+	
+	"OnSpellStart"
+	{
+		"RunScript"
+		{
+			"ScriptFile"		"items/item_refresher.lua"
+			"Function"			"item_refresher_datadriven_on_spell_start"
+		}
+	}
+	
+	"Modifiers"
+	{
+		"modifier_item_refresher_datadriven"
+		{
+			"Passive"			"1"
+			"IsHidden"			"1"
+			"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+			
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"			"%bonus_damage"
+				"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"		"%bonus_attack_speed"
+				"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"			"%bonus_intelligence"
+				"MODIFIER_PROPERTY_MANA_REGEN_PERCENTAGE"			"%bonus_mana_regen_percentage"
+				"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"			"%bonus_health_regen"
+			}
+		}
+	}
+}
+
+	//=================================================================================================================
+	// Beast: Smoke Aura
+	//=================================================================================================================
+	"beast_smoke_aura"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"beast_bash"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_AURA | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		//"AbilityCastRange"	"1000"
+		"AbilityCastPoint"	"0"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_5"	
+		"MaxLevel"	"1"
+		"RequiredLevel"	"12"
+		"AbilityCooldown"	"90.0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"                 "FIELD_FLOAT"
+            "duration"      			"35.0"
+        }
+        "03"
+        {
+            "var_type"                 "FIELD_INTEGER"
+            "bonus_movespeed"  				"15"
+        }
+        "04"
+        {
+            "var_type"                 "FIELD_INTEGER"
+            "application_radius"      		"1200"
+        }
+		"05"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"visibility_radius"		"1025"
+		}
+	}
+
+    "precache"
+    {
+        "soundfile" "soundevents/game_sounds_items.vsndevts"
+        "particle"  "particles/items2_fx/smoke_of_deceit.vpcf"
+    }
+
+	"OnAbilityPhaseStart"
+	{	
+		"FireEffect"
+		{
+			"EffectName"	"particles/items2_fx/smoke_of_deceit.vpcf"
+			"EffectAttachType"	"follow_origin"
+			"Target"		"CASTER"
+		}
+	}
+    "OnSpellStart"
+    {
+        "FireSound"
+        {
+			"EffectName"   "DOTA_Item.SmokeOfDeceit.Activate"
+			"Target"       "CASTER"
+        }
+		
+		"ActOnTargets"
+		{
+			"Target"
+	        {
+	                "Center" "CASTER"
+	                "Radius" "%application_radius"
+	                "Teams" "DOTA_UNIT_TARGET_TEAM_FRIENDLY" 
+	                "Types" "DOTA_UNIT_TARGET_HERO"
+	        }
+			"Action"
+	        {
+	            	"ApplyModifier"
+	            	{
+	            		"ModifierName"	"modifier_smoke_of_deceit"
+	            		"Target"		"TARGET"
+						"Duration"	"%duration"
+	            	}
+	
+	            	"FireEffect"
+	            	{
+	            		"EffectName"	"particles/items2_fx/smoke_of_deceit.vpcf"
+	            		"EffectAttachType"	"follow_origin"
+	            		"Target"		"TARGET"
+	            	}
+	            }
+			}
+		}
+
+        // Extra Modifier with what we need to add for the custom ability 
+        "ApplyModifier"
+        {
+            "ModifierName" "modifier_smoke_of_deceit_datadriven"
+            "Target"       "CASTER"
+        }
+
+    "Modifiers"
+    {
+
+        "modifier_smoke_of_deceit_datadriven"
+        {
+            "IsBuff"   "1"
+            "IsHidden" "1"
+            "Duration" "%duration"
+
+				"ThinkInterval"  "%application_radius"
+				"OnIntervalThink"
+				{
+					"ActOnTargets"
+					{
+						"Target"
+						{
+							"Center"  	"CASTER"
+							"Radius" 	"%application_radius"
+							"Teams" 	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+							"Types" 	"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+						}
+			
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_MOVESPEED_BONUS_UNIQUE" "%bonus_movespeed"
+            }
+			
+			"States"
+			{
+				"MODIFIER_STATE_INVISIBLE"	"MODIFIER_STATE_VALUE_ENABLED"
+			}
+		}
+    }
+}
+}
+}
+	//=================================================================================================================
+	// Beast: Resurrection Aura !!!FULLY BROKEN!!! 
+	//=================================================================================================================
+	"beast_resurrection_aura"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"beast_bash"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_AURA | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		//"AbilityCastRange"	"1000"
+		"AbilityCastPoint"	"0"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_6"	
+		"MaxLevel"	"1"
+		"RequiredLevel"	"12"
+		"AbilityCooldown"	"20.0"
+
+    "AbilitySpecial"
+    {
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"reincarnate_time"		"3.0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"disappear_time"		"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"disappear_time_minutes_tooltip"		"0"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"					"1100"
+			}
+	}
+
+    "precache"
+    {
+        "soundfile" "soundevents/game_sounds_items.vsndevts"
+        "particle"  "particles/items2_fx/smoke_of_deceit.vpcf"
+    }
+
+	"OnAbilityPhaseStart"
+	{	
+		"FireEffect"
+		{
+			"EffectName"	"particles/items_fx/aegis_timer.vpcf"
+			"EffectAttachType"	"follow_origin"
+			"Target"		"CASTER"
+		}
+	}
+    "OnSpellStart"
+    {
+        "FireSound"
+        {
+			"EffectName"   "DOTAMusic.Hero.Reincarnate"
+			"Target"       "CASTER"
+        }
+		
+		"ActOnTargets"
+		{
+			"Target"
+	        {
+	                "Center" "CASTER"
+	                "Radius" "%radius"
+	                "Teams" "DOTA_UNIT_TARGET_TEAM_FRIENDLY" 
+	                "Types" "DOTA_UNIT_TARGET_HERO"
+	        }
+			"Action"
+	        {
+	            	"ApplyModifier"
+	            	{
+	            		"ModifierName"	"modifier_item_aegis"
+	            		"Target"		"TARGET"
+	            	}
+	
+	            	"FireEffect"
+	            	{
+	            		"EffectName"	"particles/items_fx/aegis_respawn.vpcf"
+	            		"EffectAttachType"	"follow_origin"
+	            		"Target"		"TARGET"
+	            	}
+	            }
+			}
+		}
+
+        // Extra Modifier with what we need to add for the custom ability 
+        "ApplyModifier"
+        {
+            "ModifierName" "modifier_item_aegis_datadriven"
+            "Target"       "CASTER"
+        }
+
+    "Modifiers"
+    {
+
+        "modifier_item_aegis_datadriven"
+        {
+            "IsBuff"   "1"
+            "IsHidden" "1"
+            "Duration" "%duration"
+
+				"ThinkInterval"  "%radius"
+				"OnIntervalThink"
+				{
+					"ActOnTargets"
+					{
+						"Target"
+						{
+							"Center"  	"CASTER"
+							"Radius" 	"%radius"
+							"Teams" 	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+							"Types" 	"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+						}
+
+					}
+				}
+		}
+	}
+}
+	//=================================================================================================================
+	// Beast: Beast Aegis 
+	//=================================================================================================================
+	"beast_aegis"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"skeleton_king_reincarnation"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+	//	"FightRecapLevel"				"2"
+		"AbilityTextureName"			"beast_aegis"
+		"MaxLevel"						"1"
+		"RequiredLevel"					"18"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"160"
+	
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		//"AbilityManaCost"				"160"
+	
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityModifierSupportValue"	"0.2"	// Slow isn't the main function of this ability.
+	
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"reincarnate_time"		"4.0"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"slow_radius"			"0"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"movespeed"				"0"
+		}
+		"04"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"attackslow_tooltip"	"0"
+		}
+		"05"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"slow_duration"			"0.0"
+		}
+	}
+}
+	
+	//=================================================================================================================
+	// Beast: Greater Hex
+	//=================================================================================================================
+	"beast_greater_hex"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"beast_bash"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityCastRange"	"1000"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityCastPoint"	"0"
+		"AbilityCastAnimation"	"ACT_DOTA_NIAN_GAME_END"	
+		"MaxLevel"	"1"
+		"RequiredLevel"	"12"
+		"AbilityCooldown"	"13.0"
+		"AOERadius"	"%radius"
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"ModifierName"	"modifier_greater_hex"
+				"Target"
+				{
+					"Center"	"CASTER"
+					"Radius"	"%radius"
+					"Teams"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+					"Types"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+				}
+
+			}
+
+			"FireSound"
+			{
+				"EffectName"	"DOTA_Item.Sheepstick.Activate"
+				"Target"		"TARGET"
+			}
+	
+			"FireSound"
+			{
+				"EffectName"	"General.Pig"
+				"Target"		"TARGET"
+			}
+
+		}
+
+		"Modifiers"
+		{
+			"modifier_greater_hex"
+			{
+				"EffectName"	"particles/items_fx/item_sheepstick.vpcf"
+				"ModelName"	"models/props_gameplay/pig.vmdl"
+				"Duration"	"%duration"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MOVESPEED_BASE_OVERRIDE"	"%movespeed"
+				}
+
+				"States"
+				{
+					"MODIFIER_STATE_SILENCED"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_MUTED"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_DISARMED"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_PASSIVES_DISABLED"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_BLOCK_DISABLED"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_EVADE_DISABLED"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_HEXED"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+
+			}
+
+		}
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"movespeed"	"100"
+			}
+
+			"02"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"4.0"
+			}
+
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"1000"
+			}
+
+		}
+
+	}
+
+	//=================================================================================================================
+	// Tower: Flak Cannon
+	//=================================================================================================================
+	"tower_flak_cannon"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_PHYSICAL"
+//		"AbilityTextureName"	"beast_claw"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"MaxLevel"	"1"
+	//	"RequiredLevel"	"6"
+		"AbilityCooldown"	"60"
+		"AbilityCastPoint"	"0 0 0 0"
+	// Special	
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_all_stats"		"25"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_health"			"250"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_mana"			"250"
+		}
+		"04"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"cold_movement_speed"	"-35"
+		}
+		"05"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"cold_attack_speed"		"-45"
+		}
+		"06"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"cold_duration_melee"	"5.0"
+		}
+		"07"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"cold_duration_ranged"	"3.0"
+		}
+	}
+	"Modifiers"
+	{
+		"modifier_item_skadi_datadriven"
+		{
+			"Passive"				"1"
+			"IsHidden"				"1"
+			"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE"
+			
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%bonus_all_stats"
+				"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"			"%bonus_all_stats"
+				"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_all_stats"
+				"MODIFIER_PROPERTY_HEALTH_BONUS"				"%bonus_health"
+				"MODIFIER_PROPERTY_MANA_BONUS"					"%bonus_mana"
+			}
+			
+			"Orb"
+			{
+				"Priority"				"DOTA_ORB_PRIORITY_ITEM"
+				"Label"					"DOTA_ORB_LABEL_SKADI"  //This does not currently seem to have an effect.  "Label" may not be the right key.
+				"ProjectileName"		"particles/items2_fx/skadi_projectile.vpcf"
+				"CastAttack"			"0"
+			}
+
+			"OnOrbImpact"
+			{
+				"RunScript"
+				{
+					"ScriptFile"			"items/item_skadi.lua"
+					"Function"				"modifier_item_skadi_datadriven_on_orb_impact"
+					"ColdDurationMelee"		"%cold_duration_melee"
+					"ColdDurationRanged"	"%cold_duration_ranged"
+				}
+			}
+		}
+		"modifier_item_skadi_datadriven_cold_attack"
+		{
+			"Passive"				"0"
+			"IsHidden"				"0"
+			
+			"StatusEffectName"     "particles/status_fx/status_effect_frost.vpcf"
+			"StatusEffectPriority" "10"
+				
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"		"%cold_attack_speed"
+				"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"		"%cold_movement_speed"
+			}
+		}
+	}
+}
+	//=================================================================================================================
+	// Beast: Spiked Carapace
+	//=================================================================================================================
+	"beast_spiked_carapace"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_AURA"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_PURE"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityTextureName"	"beast_claw"
+		"MaxLevel"	"1"
+		"RequiredLevel"	"6"
+		"AbilityCooldown"	"23 20 17 14"
+		"AbilityCastPoint"	"0 0 0 0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"reflect_duration"	"4"
+			}
+
+			"02"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"stun_duration"	"3"
+			}
+
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_damage"	"0"
+			}
+
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_armor"	"0"
+			}
+
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_intellect"	"0"
+			}
+
+		}
+
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_nyx_assassin.vsndevts"
+			"particle"	"particles/generic_gameplay/generic_stunned.vpcf"
+			"particle"	"particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace.vpcf"
+			"particle"	"particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace_hit.vpcf"
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"heroes/hero_nian/spiked_carapace.lua"
+				"Function"	"spiked_carapace_init"
+			}
+
+			"ApplyModifier"
+			{
+				"Target"	"CASTER"
+				"ModifierName"	"modifier_spiked_carapace_buff_datadriven"
+			}
+
+			"FireSound"
+			{
+				"EffectName"	"Hero_NyxAssassin.SpikedCarapace"
+			}
+
+		}
+
+		"Modifiers"
+		{
+			"modifier_spiked_carapace_buff_datadriven"
+			{
+				"IsBuff"	"0"
+				"IsPurgable"	"0"
+				"Duration"	"%reflect_duration"
+				"EffectName"	"particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace.vpcf"
+				"OnTakeDamage"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"heroes/hero_nian/spiked_carapace.lua"
+						"Function"	"spiked_carapace_reflect"
+						"DamageTaken"	"%attack_damage"
+					}
+
+				}
+
+			}
+
+			"modifier_spiked_carapaced_stun_datadriven"
+			{
+				"IsDebuff"	"1"
+				"Duration"	"%stun_duration"
+				"OverrideAnimation"	"ACT_DOTA_DISABLED"
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"Target"	"TARGET"
+						"EffectName"	"particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace_hit.vpcf"
+						"EffectAttachType"	"follow_origin"
+						"ControlPoints"
+						{
+							"02"	"%stun_duration %stun_duration %stun_duration"
+						}
+
+					}
+
+					"AttachEffect"
+					{
+						"Target"	"TARGET"
+						"EffectName"	"particles/generic_gameplay/generic_stunned.vpcf"
+						"EffectAttachType"	"follow_overhead"
+					}
+
+					"FireSound"
+					{
+						"EffectName"	"Hero_NyxAssassin.SpikedCarapace.Stun"
+					}
+
+				}
+
+				"States"
+				{
+					"MODIFIER_STATE_STUNNED"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+
+			}
+
+		}
+
+	}
+
+}
