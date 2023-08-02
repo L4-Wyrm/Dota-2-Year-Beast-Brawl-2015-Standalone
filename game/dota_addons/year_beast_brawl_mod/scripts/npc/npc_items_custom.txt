@@ -1,0 +1,192 @@
+////////////////////////////////////////////////////////////////////////////
+// This file is created for custom gamemode: Year Beast Brawl Standalone. //
+// 			DO NOT CHANGE ANYTING THERE!	      			  			  //
+////////////////////////////////////////////////////////////////////////////
+
+"DOTAAbilities"
+{
+	//=================================================================================================================
+	// Written by: Wyrm
+	// Date: 11.06.2020
+	// For gamemode: Year Beast Brawl Standalone
+	//=================================================================================================================
+	// Courier
+	//=================================================================================================================
+	"item_courier_datadriven"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"9045"								// Valve's version of this item uses the ID "45".
+		"BaseClass"						"item_datadriven"		
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityTextureName"			"item_courier"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES"
+		
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.0"
+		"AbilityCastAnimation"   "ACT_DOTA_IDLE"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"170"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemAliases"					"donkey;chicken;animal courier"
+		"ItemStockMax"					"1"
+		"ItemStockTime"					"36000.0"	  
+		"ItemSupport"					"1"
+		"ItemKillable"					"0"
+		"ItemSellable"					"0"
+		"ShouldBeInitiallySuggested"	"1"
+		"ItemPurchasable"				"1"
+		// Extra ones
+		"ItemDroppable" 				"0"
+		"ItemInitialCharges"			"1"
+		"ItemStockInitial" 				"1"
+		"ItemStackable" 				"0"
+		"ItemPermanent" 				"0"
+		"ItemDisplayCharges"			"0"
+		// Not sellable, but handled in code.
+		
+		"OnSpellStart"
+		{
+			"SpawnUnit"
+			{
+				"UnitName"		"npc_dota_courier"
+				"Target"		"CASTER"
+			}
+		
+			"SpendCharge"
+			{
+			}
+		}
+	}
+	//=================================================================================================================
+	// Written by: Wyrm
+	// Date: 11.06.2020
+	// For gamemode: Year Beast Brawl Standalone
+	// NOTE: Early W.I.P. Not work in game. 
+	//=================================================================================================================
+	// Flying Courier
+	//=================================================================================================================
+//	"item_flying_courier_datadriven"
+//	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+//		"ID"							"10286"								// Valve's version of this item uses the ID "286".
+//		"BaseClass"						"item_datadriven"		
+//		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+//		"AbilityTextureName"			"item_flying_courier_datadriven"
+//		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES"
+//		
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+//		"AbilityCastPoint"				"0.0"
+//		"AbilityCastAnimation"   "ACT_DOTA_IDLE"
+//		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+//		"ItemCost"						"220"
+//		"ItemShopTags"					"consumable"
+//		"ItemQuality"					"consumable"
+//		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+//		"ItemAliases"					"crow;flying courier"
+//		"ItemStockMax"					"1"
+//		"ItemStockTime"					"36000.0"	  
+//		"ItemSupport"					"1"
+//		"ItemKillable"					"0"
+//		"ItemSellable"					"0"
+//		"ShouldBeInitiallySuggested"	"1"
+//		"ItemPurchasable"				"1"
+		// Extra ones
+//		"ItemDroppable" 				"0"
+//		"ItemInitialCharges"			"1"
+//		"ItemStockInitial" 				"1"
+//		"ItemStackable" 				"0"
+//		"ItemPermanent" 				"0"
+//		"ItemDisplayCharges"			"0"
+//		"ItemInitialStockTime"			"270.0"
+		// Not sellable, but handled in code.
+//		
+//		"OnSpellStart"
+//		{
+//			"SpawnUnit"
+//			{
+//				"UnitName"		"npc_dota_courier"
+//				"Target"		"CASTER"
+//			}
+//		
+//			"SpendCharge"
+//			{
+//			}
+//		}
+//	}
+	//=================================================================================================================
+	// Written by: Wyrm		
+	// Date: 07.06.2020					
+	// For gamemode: Year Beast Brawl Standalone 	
+	//=================================================================================================================
+	// Teleport Scroll					
+	//=================================================================================================================
+	"item_tpscroll_old"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_tpscroll"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_NOASSIST | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BUILDING"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"Model"							"models/props_gameplay/tpscroll01.vmdl"
+		"AbilityTextureName"			"item_tpscroll"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"0"
+		"AbilityCooldown"				"65.0"
+		"AbilitySharedCooldown"			"teleport"
+		"AbilityChannelTime"			"3.0"
+		"AbilityCastPoint"				"0.0"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"75"
+		"ItemCost"						"90"
+		"ItemShopTags"					"consumable;tutorial"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+		"SideShop"						"1"
+		"ItemAliases"					"tp"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"minimun_distance"		"70"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"maximum_distance"		"525"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"vision_radius"			"200"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"tooltip_channel_time"			"3.0"
+			}
+		}
+	}
+}

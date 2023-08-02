@@ -1,0 +1,1987 @@
+////////////////////////////////////////////////////////////////////////////
+// This file is created for custom gamemode: Year Beast Brawl Standalone. //
+// 			DO NOT CHANGE ANYTING THERE!	      			  			  //
+////////////////////////////////////////////////////////////////////////////
+
+"DOTAAbilities"
+{
+
+//=================================================================================================================
+// Written by: Wyrm
+// For gamemode: Year Beast Brawl Standalone
+// Date: 24.01.2016
+//=================================================================================================================
+// Combat Path Level 1
+//=================================================================================================================
+	"combat_lvl1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityType"				"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"beast_claw"
+		"MaxLevel"				"1"
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"			"0"
+		"AbilityCastPoint"			"0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"			"2.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"			"0"
+
+		"OnSpellStart"
+		{
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"combat_lvl1"
+			}
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"speed_lvl1"
+			}				
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"speed_lvl2"
+			}						
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"support_lvl1"
+			}			
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"support_lvl2"
+			}			
+			"AddAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_bash"
+			}
+			"LevelUpAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_bash"
+			}
+			"AddAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"combat_lvl2"
+			}
+			"AddAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"combat_lvl3"
+			}
+		}
+	}
+//=================================================================================================================
+// Written by: Wyrm
+// For gamemode: Year Beast Brawl Standalone
+// Date: 24.01.2016
+//=================================================================================================================
+// Speed Path Level 1
+//=================================================================================================================
+	"speed_lvl1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityType"				"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"	
+		"AbilityTextureName"   			"beast_leap"
+		"MaxLevel"				"1"
+	
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"			"0"
+		"AbilityCastPoint"			"0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"			"2.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"			"0"
+
+
+		"OnSpellStart"
+		{
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"speed_lvl1"
+			}			
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"support_lvl1"
+			}				
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"support_lvl2"
+			}				
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"support_lvl3"
+			}			
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"combat_lvl1"
+			}			
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"combat_lvl2"
+			}			
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"combat_lvl3"
+			}			
+			"AddAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_attack_speed_aura"
+			}
+			"LevelUpAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_attack_speed_aura"
+			}
+			"AddAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"speed_lvl2"
+			}			
+			"AddAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"speed_lvl3"
+			}
+		}
+	}
+//=================================================================================================================
+// Written by: Wyrm
+// For gamemode: Year Beast Brawl Standalone
+// Date: 24.01.2016
+//=================================================================================================================
+// Support Path Level 1
+//=================================================================================================================
+	"support_lvl1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityType"				"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"beast_bash"
+		"MaxLevel"				"1"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"			"0"
+		"AbilityCastPoint"			"0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"			"2.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"			"0"
+
+		"OnSpellStart"
+		{
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"support_lvl1"
+			}			
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"combat_lvl1"
+			}			
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"combat_lvl2"
+			}				
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"combat_lvl3"
+			}			
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"speed_lvl1"
+			}			
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"speed_lvl2"
+			}			
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"speed_lvl3"
+			}			
+			"AddAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_healing_aura"
+			}
+			"LevelUpAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_healing_aura"
+			}
+			"AddAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"support_lvl2"
+			}			
+			"AddAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"support_lvl3"
+			}
+		}
+	}
+//=================================================================================================================
+// Written by: Wyrm
+// For gamemode: Year Beast Brawl Standalone
+// Date: 24.01.2016
+//=================================================================================================================
+// Combat Path Level 2
+//=================================================================================================================
+	"combat_lvl2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityType"				"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"beast_claw"
+		"MaxLevel"				"1"
+		"RequiredLevel"	"6"
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"			"0"
+		"AbilityCastPoint"			"0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"			"2.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"			"0"
+
+		"OnSpellStart"
+		{
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"combat_lvl2"
+			}
+			"AddAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_spiked_carapace"
+			}
+			"LevelUpAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_spiked_carapace"
+			}
+			"AddAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_berserkers_call"
+			}
+			"LevelUpAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_berserkers_call"
+			}
+		}
+	}
+//=================================================================================================================
+// Written by: Wyrm
+// For gamemode: Year Beast Brawl Standalone
+// Date: 24.01.2016	
+//=================================================================================================================
+// Speed Path Level 2
+//=================================================================================================================
+	"speed_lvl2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityType"				"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"beast_leap"
+		"MaxLevel"				"1"
+		"RequiredLevel"	"6"
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"			"0"
+		"AbilityCastPoint"			"0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"			"2.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"			"0"
+
+		"OnSpellStart"
+		{
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"speed_lvl2"
+			}
+			"AddAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_stampede"
+			}
+			"LevelUpAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_stampede"
+			}
+		}
+	}
+//=================================================================================================================
+// Written by: Wyrm
+// For gamemode: Year Beast Brawl Standalone
+// Date: 24.01.2016	
+//=================================================================================================================
+// Support Path Level 2
+//=================================================================================================================
+	"support_lvl2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityType"				"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"beast_bash"
+		"MaxLevel"				"1"
+		"RequiredLevel"	"6"
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"			"0"
+		"AbilityCastPoint"			"0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"			"2.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"			"0"
+
+		"OnSpellStart"
+		{
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"support_lvl2"
+			}
+			"AddAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_truesight"
+			}
+			"LevelUpAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_truesight"
+			}
+			"AddAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_smoke_aura"
+			}
+			"LevelUpAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_smoke_aura"
+			}
+		}
+	}
+//=================================================================================================================
+// Written by: Wyrm
+// For gamemode: Year Beast Brawl Standalone
+// Date: 24.01.2016	
+//=================================================================================================================
+// Combat Path Level 3
+//=================================================================================================================
+	"combat_lvl3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityType"				"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"beast_claw"
+		"MaxLevel"				"1"
+		"RequiredLevel"	"12"
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"			"0"
+		"AbilityCastPoint"			"0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"			"2.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"			"0"
+
+		"OnSpellStart"
+		{
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"combat_lvl3"
+			}
+			"AddAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_greater_hex"
+			}
+			"LevelUpAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_greater_hex"
+			}
+		}
+	}
+//=================================================================================================================
+// Written by: Wyrm
+// For gamemode: Year Beast Brawl Standalone
+// Date: 24.01.2016	
+//=================================================================================================================
+// Beast Ultimate
+//=================================================================================================================
+	"beast_ulti"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityType"				"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"beast_aegis"
+		"MaxLevel"				"1"
+		"RequiredLevel"					"18"
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"			"0"
+		"AbilityCastPoint"			"0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"			"2.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"			"0"
+
+		"OnSpellStart"
+		{
+			"RemoveAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_ulti"
+			}
+			"AddAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_aegis"
+			}
+			"LevelUpAbility"
+			{
+				"Target"		"CASTER"
+				"AbilityName"		"beast_aegis"
+			}
+		}
+	}
+	
+	//=================================================================================================================
+	// Written by: Wyrm
+	// For gamemode: Year Beast Brawl Standalone
+	// Date: 01.02.2016
+	//=================================================================================================================
+	// Beast: Bash
+	//=================================================================================================================
+	"beast_bash"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"AbilityTextureName" 			"beast_claw_passive"	
+		"MaxLevel"				"1"
+		
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityModifierSupportBonus"		"25"
+		"Modifiers"
+		{
+			"modifier_beast_bash_passive"
+			{
+				"IsHidden"	"1"
+				"Passive" "1"
+				"OnAttackLanded"
+				{
+					"Random"
+					{
+						"Chance" "%chance"
+						"PseudoRandom" "DOTA_PSEUDO_RANDOM_SLARDAR_BASH"
+						"OnSuccess"
+						{
+							"ApplyModifier"
+							{
+								"Target" "TARGET"
+								"ModifierName" "modifier_beast_bash_stun"
+								"Target"
+								{
+									"Teams"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+									"Types"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+								}
+							}							
+						}
+					}
+				}
+			}
+
+			"modifier_beast_bash_stun"
+			{
+				"Duration" "%duration"
+				"EffectName" "particles/generic_gameplay/generic_stunned.vpcf"
+				"EffectAttachType" "follow_overhead"
+				"OverrideAnimation" "ACT_DOTA_DISABLED"
+				"States"
+				{
+					"MODIFIER_STATE_STUNNED" "MODIFIER_STATE_VALUE_ENABLED"
+				}			
+			}
+		}
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"chance"				"12"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"1.00"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration_creep"		"1.00"
+			}
+		}
+	}
+	//=================================================================================================================
+	// Rewrite of the Luna Lunar Blessing ability
+	// Author: jacklarnes
+	// Date: 03.04.2015.
+	//=================================================================================================================
+	// Rework by: Wyrm
+	// For gamemode: Year Beast Brawl Standalone
+	// Date: 20.03.2016
+	//=================================================================================================================
+	// Beast: Attack Speed Aura
+	//=================================================================================================================
+	"beast_attack_speed_aura"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"beast_leap_passive"
+		"MaxLevel"	"1"
+	
+		// Precache
+		//-------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+	//		"particle"			"particles/units/heroes/hero_luna/luna_ambient_lunar_blessing.vpcf"
+		}
+	
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"900"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_damage"				"30"
+			}
+		}
+	
+		"Modifiers"
+		{
+			"modifier_attack_speed_aura"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+				"IsDebuff"			"0"
+	
+	//			"EffectName"		"particles/units/heroes/hero_luna/luna_ambient_lunar_blessing.vpcf"
+	//			"EffectAttachType"	"follow_origin"
+	
+				"Aura" 				"modifier_attack_speed_damage_effect"
+				"Aura_Radius" 		"%radius"
+				"Aura_Teams" 		"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+				"Aura_Types" 		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+			}
+	
+			"modifier_attack_speed_damage_effect"
+			{
+				"IsDebuff"			"0"
+	
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"%bonus_damage"
+				}
+			}
+		}
+	}
+	
+	//=================================================================================================================
+	// Rewrite of Mekansm
+	// Author: Rook
+	// Date: January 26, 2015
+	//=================================================================================================================
+	// Rewrite of Arcane Boots
+	// Author: Rook
+	// Date: February 4, 2015
+	//
+	// Edited by: Wyrm
+	// For gamemode: Year Beast Brawl Standalone
+	// Date: 24.01.2016
+	//=================================================================================================================
+	// Beast: Truesight
+	//=================================================================================================================
+	"beast_truesight"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"beast_bash"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AURA"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCastRange"	"1000"
+		"AbilityCastPoint"	"0"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_5"	
+		"MaxLevel"	"1"
+		"RequiredLevel"	"12"
+		"AbilityCooldown"	"35.0"
+		"AOERadius"	"%radius"
+		
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"ModifierName"	"modifier_truesight"
+				"Target"
+				{
+					"Center"	"CASTER"
+					"Radius"	"%radius"
+					"Teams"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+					"Types"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+				}
+
+			}
+			"RunScript"
+			{
+				"ScriptFile"			"items/item_arcane_boots.lua"
+				"Function"				"item_arcane_boots_datadriven_on_spell_start"
+				"ReplenishRadius"		"%replenish_radius"
+				"ReplenishAmount"		"%replenish_amount"
+			}
+			"RunScript"
+			{
+				"ScriptFile"			"items/item_mekansm.lua"
+				"Function"				"item_mekansm_datadriven_on_spell_start"
+				"HealAmount"			"%heal_amount"
+				"HealRadius"			"%heal_radius"
+			}
+		}
+
+			"Modifiers"
+			{
+				"modifier_truesight"
+				{
+					"Duration"	"%duration"
+
+					"States"
+					{
+						"MODIFIER_STATE_INVISIBLE"	"MODIFIER_STATE_VALUE_DISABLED"
+					}
+				}
+				"modifier_item_arcane_boots_datadriven"
+				{
+					"Passive"			"1"
+					"IsHidden"			"1"
+					"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+			
+					"Properties"
+					{
+						"MODIFIER_PROPERTY_MANA_BONUS"					"%bonus_mana"
+					}
+				}
+				"modifier_item_mekansm_datadriven"
+				{
+					"Passive"			"1"
+					"IsHidden"			"1"
+					"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+			
+					"Properties"
+					{
+						"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%bonus_all_stats"
+						"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"			"%bonus_all_stats"
+						"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%bonus_all_stats"
+						"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"		"%bonus_armor"
+					}
+				}
+				"modifier_item_mekansm_datadriven_aura_emitter"
+				{
+					"Passive"				"1"
+					"IsHidden"				"1"
+			
+					"Aura" 					"modifier_item_mekansm_datadriven_aura"
+					"Aura_Radius" 			"%aura_radius"
+					"Aura_Teams" 			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+					"Aura_Types" 			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+					"Aura_Flags" 			"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+					"Aura_ApplyToCaster" 	"1"
+				}
+				"modifier_item_mekansm_datadriven_aura"
+				{
+					"Passive"			"0"
+					"IsHidden"			"0"
+			
+					"Properties"
+					{
+						"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"		"%aura_health_regen"
+					}
+				}
+				"modifier_item_mekansm_datadriven_heal_armor"
+				{
+					"Duration"			"%heal_armor_duration"
+					"Passive"			"0"
+					"IsHidden"			"0"
+					"IsBuff"			"1"
+					"IsDebuff"			"0"
+					"IsPurgable"		"1"
+					"TextureName"		"item_buckler"
+				
+					"Properties"
+					{
+						"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_UNIQUE_ACTIVE"		"%heal_bonus_armor"
+					}
+				}
+				//Placed onto units when healed by Mekansm, and prevents further heals from Mekansm while it exists.
+				//A separate modifier is used because the armor buff from Restore can be dispelled, but this can't.
+				"imodifier_item_mekansm_datadriven_heal_debuff"
+				{
+					"Duration"			"heal_armor_duration"
+					"Passive"			"0"
+					"IsHidden"			"1"
+					"IsBuff"			"0"
+					"IsDebuff"			"1"
+					"IsPurgable"		"0"
+				}
+			}
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"movespeed"	"0"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"25.0"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"1100"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana"			"250"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"replenish_radius"		"750"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"replenish_amount"		"135"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movement"		"55"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all_stats"		"5"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_armor"			"5"
+			}
+			"10"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_radius"			"750"
+			}
+			"11"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_health_regen"		"4"
+			}
+			"12"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"heal_amount"			"250"
+			}
+			"13"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"heal_radius"			"750"
+			}
+			"14"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"heal_bonus_armor"		"2"
+			}
+			"15"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"heal_armor_duration"	"25.0"
+			}
+		}
+	
+	}
+	//=================================================================================================================
+	// Written by: Wyrm
+	// For gamemode: Year Beast Brawl Standalone
+	// Date: 24.01.2016
+	//=================================================================================================================
+	// Beast: Healing Aura
+	//=================================================================================================================
+	"beast_healing_aura"
+	{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_AURA | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"beast_bash_passive"
+		"MaxLevel"	"1"
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"ModifierName"	"aura_health_regen"
+				"Target"
+				{
+					"Center"	"CASTER"
+					"Radius"	"%health_radius"
+					"Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+					"Types"	"DOTA_UNIT_TARGET_HERO"
+				}
+
+			}
+
+		}
+
+		"Modifiers"
+		{
+			"fx_heal_aura"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"Target"	"CASTER"
+						"EffectName"	"particles/units/heroes/hero_witchdoctor/witchdoctor_voodoo_restoration.vpcf"
+						"EffectAttachType"	"follow_origin"
+						"ControlPoints"
+						{
+							"00"	"0 0 0"
+							"01"	"%health_radius 0 0"
+							"02"	"0 0 -200"
+						}
+
+					}
+
+				}
+
+			}
+
+			"aura_health_regen"
+			{
+				"IsHidden"	"0"
+				"Passive"	"1"
+				"Aura"	"health_regen"
+				"Aura_Radius"	"%health_radius"
+				"Aura_Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+				"Aura_Types"	"DOTA_UNIT_TARGET_HERO"
+				"Aura_ApplyToCaster"	"0"
+			}
+
+			"health_regen"
+			{
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"%health_regen_amount"
+				}
+
+			}
+
+		}
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"health_radius"	"1100"
+			}
+
+			"02"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"health_regen_amount"	"10.0"
+			}
+
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"armor_buff"	"0"
+			}
+
+		}
+
+	}
+	//=================================================================================================================
+	// Rewrite of Centaur Stampede
+	// Author: Noya
+	// Date: 01.12.2015.
+	// Version: 6.85
+	// Type: Datadriven
+	//
+	// ----- FILE REQUIREMENTS -----
+	// Script files:
+	// scripts/vscripts/heroes/hero_centaur/stampede.lua
+	//
+	// Edited by: Wyrm
+	// For gamemode: Year Beast Brawl Standalone
+	// Date: 24.01.2016
+	//=================================================================================================================
+	// Beast: Stampede
+	//=================================================================================================================
+	"beast_stampede"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityTextureName"	"beast_leap"
+		"RequiredLevel"	"6"
+		"MaxLevel"	"1"
+		"AbilityCooldown"	"60.0"
+		"AbilityModifierSupportValue"	"0.2"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"3.00"
+			}
+
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"base_damage"	"0"
+			}
+
+			"03"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"strength_damage"	"0.0 0.0 0.0"
+			}
+
+			"04"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"slow_duration"	"0.0"
+			}
+
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"500"
+			}
+
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"slow_movement_speed"	""
+			}
+
+		}
+
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_centaur.vsndevts"
+			"particle"	"particles/units/heroes/hero_centaur/centaur_stampede_overhead.vpcf"
+			"particle"	"particles/units/heroes/hero_centaur/centaur_stampede.vpcf"
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"heroes/hero_nian/stampede.lua"
+				"Function"	"StampedeStart"
+			}
+
+			"ApplyModifier"
+			{
+				"Target"
+				{
+					"Center"	"CASTER"
+					"Radius"	"GLOBAL"
+					"Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+					"Types"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+					"ExcludeTypes"	"DOTA_UNIT_TARGET_BASIC"
+				}
+
+				"ModifierName"	"modifier_stampede"
+			}
+
+		}
+
+		"Modifiers"
+		{
+			"modifier_stampede"
+			{
+				"Duration"	"%duration"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"	"50000"
+				}
+
+				"States"
+				{
+					"MODIFIER_STATE_NO_UNIT_COLLISION"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+
+				"EffectName"	"particles/units/heroes/hero_centaur/centaur_stampede.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"EffectName"	"particles/units/heroes/hero_centaur/centaur_stampede_overhead.vpcf"
+						"EffectAttachType"	"follow_overhead"
+						"Target"	"TARGET"
+					}
+
+				}
+
+				"OnUnitMoved"
+				{
+					"Random"
+					{
+						"Chance"	"3.22"
+						"OnSuccess"
+						{
+							"FireSound"
+							{
+								"EffectName"	"Hero_Centaur.Stampede.Movement"
+								"Target"	"UNIT"
+							}
+
+						}
+
+					}
+
+				}
+
+				"Aura"	"modifier_stampede_collision"
+				"Aura_Radius"	"%radius"
+				"Aura_Teams"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+				"Aura_Types"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+			}
+
+			"modifier_stampede_collision"
+			{
+				"IsHidden"	"1"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"heroes/hero_nian/stampede.lua"
+						"Function"	"Stampede"
+					}
+
+					"FireSound"
+					{
+						"EffectName"	"Hero_Centaur.Stampede.Stun"
+						"Target"	"TARGET"
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+	//=================================================================================================================
+	// Rewrite of the Axe Berserkers Call ability
+	// Author: Pizzalol
+	// Date: 14.10.2015.
+	// Version: 6.83
+	// Type: Datadriven
+	//
+	// ----- FILE REQUIREMENTS -----
+	// Script files:
+	// scripts/vscripts/heroes/hero_axe/berserkers_call.lua
+	//
+	// Edited by: Wyrm
+	// For gamemode: Year Beast Brawl Standalone
+	// Date: 24.01.2016
+	// Updated: 30.01.2017
+	//=================================================================================================================
+	// Beast: Berserker's Call
+	//=================================================================================================================
+	"beast_berserkers_call"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityTextureName"	"beast_claw"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_3"
+		"MaxLevel"	"1"
+		"RequiredLevel"	"6"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_axe.vsndevts"
+			"particle"	"particles/units/heroes/hero_axe/axe_beserkers_call_owner.vpcf"
+			"particle"	"particles/status_fx/status_effect_beserkers_call.vpcf"
+		}
+
+		"AbilityCastPoint"	"0.3"
+		"AbilityCooldown"	"10"
+		"AbilityDamage"	"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"300"
+			}
+
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_armor"	"0"
+			}
+
+			"03"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"2.5"
+			}
+
+		}
+
+		"OnSpellStart"
+		{
+			"FireSound"
+			{
+				"EffectName"	"Hero_Axe.Berserkers_Call"
+				"Target"	"CASTER"
+			}
+
+			"FireEffect"
+			{
+				"EffectName"	"particles/units/heroes/hero_axe/axe_beserkers_call_owner.vpcf"
+				"EffectAttachType"	"start_at_customorigin"
+				"ControlPointEntities"
+				{
+					"CASTER"	"follow_origin"
+					"CASTER"	"follow_origin"
+					"CASTER"	"follow_origin"
+				}
+
+			}
+
+			"ApplyModifier"
+			{
+				"ModifierName"	"modifier_berserkers_call_caster_datadriven"
+				"Target"	"CASTER"
+				"Duration"	"%duration"
+			}
+
+			"ActOnTargets"
+			{
+				"Target"
+				{
+					"Center"	"CASTER"
+					"Radius"	"%radius"
+					"Teams"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+					"Types"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+					"Flags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+				}
+
+				"Action"
+				{
+					"ApplyModifier"
+					{
+						"ModifierName"	"modifier_beserkers_call_enemy_datadriven"
+						"Target"	"TARGET"
+						"Duration"	"%duration"
+					}
+
+				}
+
+			}
+
+		}
+
+		"Modifiers"
+		{
+			"modifier_berserkers_call_caster_datadriven"
+			{
+				"IsPurgable"	"0"
+				"IsBuff"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"%bonus_armor"
+				}
+
+			}
+
+			"modifier_beserkers_call_enemy_datadriven"
+			{
+				"IsPurgable"	"0"
+				"IsDebuff"	"1"
+				"StatusEffectName"	"particles/status_fx/status_effect_beserkers_call.vpcf"
+				"StatusEffectPriority"	"10"
+				"ThinkInterval"	"0.1"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"heroes/hero_nian/berserkers_call.lua"
+						"Function"	"BerserkersCall"
+					}
+
+				}
+
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"heroes/hero_nian/berserkers_call.lua"
+						"Function"	"BerserkersCallEnd"
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+	//=================================================================================================================
+	// Written by: Wyrm
+	// For gamemode: Year Beast Brawl Standalone
+	// Date: 24.01.2016
+	//=================================================================================================================
+	// Beast: Smoke Aura
+	//=================================================================================================================
+	"beast_smoke_aura"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"beast_bash"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_AURA | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		//"AbilityCastRange"	"1000"
+		"AbilityCastPoint"	"0"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_5"	
+		"MaxLevel"	"1"
+		"RequiredLevel"	"12"
+		"AbilityCooldown"	"90.0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"                 "FIELD_FLOAT"
+            "duration"      			"35.0"
+        }
+        "03"
+        {
+            "var_type"                 "FIELD_INTEGER"
+            "bonus_movespeed"  				"15"
+        }
+        "04"
+        {
+            "var_type"                 "FIELD_INTEGER"
+            "application_radius"      		"1200"
+        }
+		"05"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"visibility_radius"		"1025"
+		}
+	}
+
+    "precache"
+    {
+        "soundfile" "soundevents/game_sounds_items.vsndevts"
+        "particle"  "particles/items2_fx/smoke_of_deceit.vpcf"
+    }
+
+	"OnAbilityPhaseStart"
+	{	
+		"FireEffect"
+		{
+			"EffectName"	"particles/items2_fx/smoke_of_deceit.vpcf"
+			"EffectAttachType"	"follow_origin"
+			"Target"		"CASTER"
+		}
+	}
+    "OnSpellStart"
+    {
+        "FireSound"
+        {
+			"EffectName"   "DOTA_Item.SmokeOfDeceit.Activate"
+			"Target"       "CASTER"
+        }
+		
+		"ActOnTargets"
+		{
+			"Target"
+	        {
+	                "Center" "CASTER"
+	                "Radius" "%application_radius"
+	                "Teams" "DOTA_UNIT_TARGET_TEAM_FRIENDLY" 
+	                "Types" "DOTA_UNIT_TARGET_HERO"
+	        }
+			"Action"
+	        {
+	            	"ApplyModifier"
+	            	{
+	            		"ModifierName"	"modifier_smoke_of_deceit"
+	            		"Target"		"TARGET"
+						"Duration"	"%duration"
+	            	}
+	
+	            	"FireEffect"
+	            	{
+	            		"EffectName"	"particles/items2_fx/smoke_of_deceit.vpcf"
+	            		"EffectAttachType"	"follow_origin"
+	            		"Target"		"TARGET"
+	            	}
+	            }
+			}
+		}
+
+        // Extra Modifier with what we need to add for the custom ability 
+        "ApplyModifier"
+        {
+            "ModifierName" "modifier_smoke_of_deceit_datadriven"
+            "Target"       "CASTER"
+        }
+
+    "Modifiers"
+    {
+
+        "modifier_smoke_of_deceit_datadriven"
+        {
+            "IsBuff"   "1"
+            "IsHidden" "1"
+            "Duration" "%duration"
+
+				"ThinkInterval"  "%application_radius"
+				"OnIntervalThink"
+				{
+					"ActOnTargets"
+					{
+						"Target"
+						{
+							"Center"  	"CASTER"
+							"Radius" 	"%application_radius"
+							"Teams" 	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+							"Types" 	"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+						}
+			
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_MOVESPEED_BONUS_UNIQUE" "%bonus_movespeed"
+            }
+			
+			"States"
+			{
+				"MODIFIER_STATE_INVISIBLE"	"MODIFIER_STATE_VALUE_ENABLED"
+			}
+		}
+    }
+}
+}
+}
+
+	//=================================================================================================================
+	// Written by: Wyrm
+	// For gamemode: Year Beast Brawl Standalone
+	// Date: 24.01.2016
+	// Note: Need to make different resurrection sounds for Radiant and Dire beasts
+	//=================================================================================================================
+	// Beast: Beast Aegis 
+	//=================================================================================================================
+	"beast_aegis"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"skeleton_king_reincarnation"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityTextureName"			"beast_aegis"
+		"MaxLevel"						"1"
+		"RequiredLevel"					"17"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"160"
+	
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		//"AbilityManaCost"				"160"
+	
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityModifierSupportValue"	"0.2"	// Slow isn't the main function of this ability.
+	
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"reincarnate_time"		"4.0"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"slow_radius"			"0"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"movespeed"				"0"
+		}
+		"04"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"attackslow_tooltip"	"0"
+		}
+		"05"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"slow_duration"			"0.0"
+		}
+	}
+}
+	//=================================================================================================================
+	// Written by: Wyrm
+	// For gamemode: Year Beast Brawl Standalone
+	// Date: 31.01.2016 
+	// Updated: 31.01.2017
+	//=================================================================================================================
+	// Beast: Greater Hex
+	//=================================================================================================================
+	"beast_greater_hex"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_datadriven"
+		"AbilityTextureName"			"beast_claw"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"	"1"
+		"RequiredLevel"	"12"
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"	"1000"
+		"AbilityCastPoint"				"0"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_2"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"13.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		
+		// Data Driven
+		//-------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"soundfile" "soundevents/game_sounds_cny.vsndevts"
+			"soundfile" "soundevents/game_sounds_items.vsndevts"
+			"soundfile" "soundevents/game_sounds.vsndevts"
+			"particle"  "particles/items_fx/item_sheepstick.vpcf"
+		}
+		
+		"AbilityManaCost"				"0"
+		
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"ModifierName" "modifier_greater_hex"
+				"Target"
+				{
+					"Center" "CASTER"
+					"Radius" "%radius"
+					"Teams" "DOTA_UNIT_TARGET_TEAM_ENEMY"
+					"Types" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+				}
+			}
+		}
+		// Modifiers
+		//-------------------------------------------------------------------------------------------------------------
+		"Modifiers"
+		{
+			"modifier_greater_hex"
+			{
+				"EffectName"	"particles/items_fx/item_sheepstick.vpcf"
+				"ModelName"	"models/props_gameplay/pig.vmdl"
+				"Duration"										 "%duration"
+				
+				"OnCreated"
+				{
+					"ActOnTargets"
+					{
+						"Target"
+						{
+							"Center" "CASTER"
+							"Radius" "%radius"
+							"Teams" "DOTA_UNIT_TARGET_TEAM_ENEMY"
+							"Types" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+						}	
+						"Action"
+						{
+							"FireSound"
+							{
+								"EffectName"	"DOTA_Item.Sheepstick.Activate"
+								"Target"		"TARGET"
+							}
+							"FireSound"
+							{
+								"EffectName"	"General.Pig"
+								"Target"		"TARGET"
+							}
+							"FireSound"
+							{
+								"EffectName"	"CNY_Beast.Roar"
+								"Target"		"CASTER"
+							}
+						}
+					}
+				}
+				
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MOVESPEED_BASE_OVERRIDE"	"%movespeed"
+				}
+				"States"
+				{
+					"MODIFIER_STATE_SILENCED"		    "MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_MUTED"			    "MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_DISARMED"           "MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_PASSIVES_DISABLED"  "MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_BLOCK_DISABLED"		"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_EVADE_DISABLED"		"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_HEXED"				"MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+		}
+
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"movespeed"					"100"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"4.0"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"1000"
+			}
+		}
+	}
+	
+	//=================================================================================================================
+	// Written by: Wyrm
+	// For gamemode: Year Beast Brawl Standalone
+	// Date: 31.01.2016
+	//=================================================================================================================
+	// Tower: Flak Cannon
+	//=================================================================================================================
+	"tower_flak_cannon"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_PHYSICAL"
+		"AbilityTextureName"	""
+		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"MaxLevel"	"1"
+		"AbilityCooldown"	"60"
+		"AbilityCastPoint"	"0"
+	// Special	
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all_stats"		"0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"			"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana"			"0"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"cold_movement_speed"	"-35"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"cold_attack_speed"		"-45"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"cold_duration_melee"	"5.0"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"cold_duration_ranged"	"3.0"
+			}
+			"08"
+			{
+				"var_type"          "FIELD_INTEGER"
+				"radius"    "1000"
+			}
+			"09"
+			{
+				"var_type"   "FIELD_INTEGER"
+				"max_attacks"   "3"
+			}
+			"10"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"3.0"	
+			}
+		}
+		
+		"Modifiers"
+		{
+			"modifier_flak_cannon_datadriven"
+			{
+				"IsHidden"	"1"
+				"Passive" "1"
+				"OnAttackStart"
+				{
+					"CreateBonusAttack"
+					{
+						"Target"
+						{
+							"Center"        "TARGET"
+							"Radius"        "%radius"
+							"Teams"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+							"Types"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+							"MaxTargets"    "%max_attacks"
+						}
+					}
+				}
+				
+				"OnAttackLanded"
+				{
+					"ActOnTargets"
+					{
+						"Target"
+						{
+							"Center"	"TARGET"
+							"Radius"	"%radius"
+							"Teams"		"DOTA_UNIT_TARGET_TEAM_ENEMY" 
+							"Types"		"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+						}
+	
+						"Action"
+						{
+							"ApplyModifier"
+							{
+								"ModifierName"	"modifier_item_skadi_slow"
+								"Target"		"TARGET"
+								"Duration"	"%duration"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	//=================================================================================================================
+	// Written by: Wyrm
+	// For gamemode: Year Beast Brawl Standalone
+	// Date: 31.01.2016
+	//=================================================================================================================
+	// Beast: Spiked Carapace
+	//=================================================================================================================
+	"beast_spiked_carapace"
+	{
+		"BaseClass"	"nyx_assassin_spiked_carapace"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_PURE"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityTextureName"	"beast_claw"
+		"MaxLevel"	"1"
+		"RequiredLevel"	"6"
+		"AbilityCooldown"	"23 20 17 14"
+		"AbilityCastPoint"	"0 0 0 0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"reflect_duration"	"4"
+			}
+
+			"02"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"stun_duration"	"3"
+			}
+
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_damage"	"0"
+			}
+
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_armor"	"0"
+			}
+
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_intellect"	"0"
+			}
+
+		}
+	}
+	//=================================================================================================================
+	// Written by: Wyrm
+	// For gamemode: Year Beast Brawl Standalone
+	// Date: 04.02.2016
+	// Updated: 30.01.2017
+	//=================================================================================================================
+	// Ability: Attribute Bonus Datadriven
+	//=================================================================================================================
+	"attribute_bonus_datadriven"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"attribute_bonus_datadriven"
+		"MaxLevel"						"16"
+		"LevelsBetweenUpgrades" "1"
+		
+		// Damage.
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityDamage"					"0 0 0 0"
+				
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"attribute_bonus_all"		"2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32"
+			}
+		}
+		
+		// Data driven
+		//-------------------------------------------------------------------------------------------------------------
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"Target"				"CASTER"
+				"ModifierName"			"modifier_attribute_bonus_datadriven"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_attribute_bonus_datadriven"
+			{
+				"IsHidden"				"1"
+				"Passive"				"1"
+				
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%attribute_bonus_all"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "%attribute_bonus_all"  
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "%attribute_bonus_all"   
+				}
+			}
+		}
+	}
+	//=================================================================================================================
+	// Author: Valve										 
+	//														 
+	// Rework by: Wyrm						 				 
+	// Date: 11.06.2020.					 				 
+	// For gamemode: Year Beast Brawl Standalone						 
+	//=================================================================================================================
+	"dota_ability_gold_global"
+	{
+		"BaseClass"          			    "ability_datadriven"
+		"AbilityName"           			"dota_ability_gold_global"
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"Modifiers"
+		{
+			"modifier_dota_ability_gold_global"
+			{
+				"IsHidden"				"1"
+				"Passive"				"1"
+				
+				"Aura"					"modifier_get_gold_global"
+				"Aura_Radius"			"8000"
+				"Aura_Teams"			"DOTA_UNIT_TARGET_TEAM_BOTH"
+				"Aura_Types"			"DOTA_UNIT_TARGET_HERO"
+				"Aura_ApplyToCaster"	"0"
+				"Aura_Flags"    		"DOTA_UNIT_TARGET_FLAG_NOT_ILLUSIONS"
+
+				"States"
+				{
+					"MODIFIER_STATE_UNSELECTABLE"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_NO_HEALTH_BAR"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_INVULNERABLE"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_OUT_OF_GAME"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_NOT_ON_MINIMAP" "MODIFIER_STATE_VALUE_ENABLED"
+				}
+
+				"ThinkInterval"	"0.7"
+
+				"OnCreated"
+				{
+					"GrantXPGold"
+					{
+						"Target"
+						{
+							"Center"		"CASTER"
+							"radius"		"9999"
+							"Types"			"DOTA_UNIT_TARGET_HERO"
+							"Flags"			"DOTA_UNIT_TARGET_FLAG_NOT_ILLUSIONS"
+						}
+						"GoldAmount"		"1"
+						"ReliableGold"		"1"
+						"PlayAlert"		"0"
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,175 @@
+////////////////////////////////////////////////////////////////////////////
+// This file is created for custom gamemode: Year Beast Brawl Standalone. //
+// 			DO NOT CHANGE ANYTING THERE!	      			  			  //
+////////////////////////////////////////////////////////////////////////////
+
+"DOTAHeroes"
+{
+	////////////////////////////////////////////////////////////
+	//Year Beast: Good Guys
+	////////////////////////////////////////////////////////////
+	"npc_dota_hero_beast_good"
+	{
+		"override_hero"	"npc_dota_hero_viper"
+		"Model"	"models/heroes/nian/nian_hero.vmdl"
+
+		"AbilityLayout"	"5"
+		"SoundSet"	"cny_beast"
+		"GameSoundsFile"			"soundevents/game_sounds_cny.vsndevts"
+		"VoiceFile"					"soundevents/game_sounds_cny.vsndevts"
+		"IdleSoundLoop"                "CNY_Beast.Breath"
+		"HeroSelectSoundEffect"		"CNY_Beast.Spawn.Radiant"
+		"BotImplemented"		"1"
+		"HeroUnlockOrder"		"1"
+		"Ability1"	"combat_lvl1"
+		"Ability2"	"speed_lvl1"
+		"Ability3"	"support_lvl1"
+		"Ability4"	"beast_ulti"
+		"Ability5"	"attribute_bonus_datadriven"
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	""
+		"Ability16"	""
+		"Ability17"	""
+		"Ability18"	""
+		"precache"
+		{
+			"model"	"models/hero/nian/nian_hero.vmdl"
+			"soundfile"	"soundevents/game_sounds_cny.vsndevts"
+		}
+
+//		"MinimapIcon"				"minimap_nian"
+		"MinimapIconSize"			"500"
+		"ArmorPhysical"	"4"
+		"MagicalResistance"	"0"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttributePrimary"	"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"	"0"
+		"AttributeStrengthGain"	"0"
+		"AttributeBaseIntelligence"	"0"
+		"AttributeIntelligenceGain"	"0"
+		"AttributeBaseAgility"	"0"
+		"AttributeAgilityGain"	"0"
+		"BountyXP"	"250"
+		"BountyGoldMin"	"250"
+		"BountyGoldMax"	"250"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"	"500"
+		"MovementTurnRate"	"1.0"
+		"StatusHealth"	"2000"
+		"StatusHealthRegen"	"5"
+		"StatusMana"	"400"
+		"StatusManaRegen"	"1"
+		"VisionNighttimeRange"	"1800"
+		"AttackDamageMin"			"85"		// Damage range min.
+		"AttackDamageMax"			"85"		// Damage range max.	
+		"AttackRate"				"1.0"		// Speed of attack.
+		"AttackAnimationPoint"		"0.5"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"800"		// Range within a target can be acquired.
+		"AttackRange"				"120"		// Range within a target can be attacked.
+		"ProjectileModel"	""
+		"ProjectileSpeed"	"0"
+		"RingRadius"	"80"
+		"HealthBarOffset"	"160"
+		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
+		"BotImplemented"	"1"
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+		"VisionDaytimeRange"	"1850"
+		//Inventory
+		"HasInventory"		"0"
+	}
+	
+	////////////////////////////////////////////////////////////
+	//Year Beast: Bad Guys
+	////////////////////////////////////////////////////////////
+	"npc_dota_hero_dire_beast"
+	{
+		"override_hero"	"npc_dota_hero_visage"
+		"Model"	"models/heroes/nian_dire/nian_hero_dire.vmdl"
+
+		"AbilityLayout"	"5"
+		"SoundSet"	"cny_beast"
+		"GameSoundsFile"			"soundevents/game_sounds_cny.vsndevts"
+		"VoiceFile"					"soundevents/game_sounds_cny.vsndevts"
+		"IdleSoundLoop"                "CNY_Beast.Breath"
+		"HeroSelectSoundEffect"		"CNY_Beast.Spawn.Dire"
+		"BotImplemented"		"1"
+		"HeroUnlockOrder"		"1"
+		"Ability1"	"combat_lvl1"
+		"Ability2"	"speed_lvl1"
+		"Ability3"	"support_lvl1"
+		"Ability4"	"beast_ulti"
+		"Ability5"	"attribute_bonus_datadriven"
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	""
+		"Ability16"	""
+		"Ability17"	""
+		"Ability18"	""
+		"precache"
+		{
+			"model"	"models/hero/nian_dire/nian_hero_dire.vmdl"
+			"soundfile"	"soundevents/game_sounds_cny.vsndevts"
+		}
+
+//		"MinimapIcon"				"minimap_nian_dire"
+		"MinimapIconSize"			"500"
+		"ArmorPhysical"	"4"
+		"MagicalResistance"	"0"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttributePrimary"	"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"	"0"
+		"AttributeStrengthGain"	"0"
+		"AttributeBaseIntelligence"	"0"
+		"AttributeIntelligenceGain"	"0"
+		"AttributeBaseAgility"	"0"
+		"AttributeAgilityGain"	"0"
+		"BountyXP"	"250"
+		"BountyGoldMin"	"250"
+		"BountyGoldMax"	"250"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"	"500"
+		"MovementTurnRate"	"1.0"
+		"StatusHealth"	"2000"
+		"StatusHealthRegen"	"5"
+		"StatusMana"	"400"
+		"StatusManaRegen"	"1"
+		"VisionNighttimeRange"	"1800"
+		"AttackDamageMin"			"85"		// Damage range min.
+		"AttackDamageMax"			"85"		// Damage range max.	
+		"AttackRate"				"1.0"		// Speed of attack.
+		"AttackAnimationPoint"		"0.5"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"800"		// Range within a target can be acquired.
+		"AttackRange"				"120"		// Range within a target can be attacked.
+		"ProjectileModel"	""
+		"ProjectileSpeed"	"0"
+		"RingRadius"	"80"
+		"HealthBarOffset"	"160"
+		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
+		"BotImplemented"	"1"
+		"TeamName"	"DOTA_TEAM_BADGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+		"VisionDaytimeRange"	"1850"
+		//Inventory
+		"HasInventory"		"0"
+	}
+}

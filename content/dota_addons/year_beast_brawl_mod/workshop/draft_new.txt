@@ -1,0 +1,77 @@
+title: Year Beast Brawl 2015 Standalone
+descript: [i]Most of Dota 2 Players (especially who play it), remember Year Beast Brawl 2015 event by Valve, where you play standart All Pick, but also with Year Beast (aka Nian).  Well this custom gamemode similar to original Valve event, but there a bit little differences. That can be seen below.[/i]
+
+[h1][i]WARNING: Read [url=http://steamcommunity.com/workshop/filedetails/discussion/854107754/135507780429797186/]this[/url] before send friend request! Also for suggestions, questions and etc.[/i] [i]Also post any problem you find [url=http://steamcommunity.com/workshop/filedetails/discussion/854107754/135507780429815954/]here[/url][/i][/h1]
+
+[img]https://pp.userapi.com/c631326/v631326562/272de/N2aY7W28uck.jpg[/img][url=http://steamcommunity.com/id/r0b0tCh1kEn/myworkshopfiles/?appid=570&sort=score&browsefilter=myfiles&view=imagewall][img]https://pp.userapi.com/c631326/v631326562/272e5/XsZAWV4ey5M.jpg[/img][/url][img]https://pp.userapi.com/c631326/v631326562/272ec/pgS6H3WkwEs.jpg[/img][url=https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=XFNUS9HWGLGVL&lc=RU&currency_code=USD&bn=PP%2dDonationsBF%3aVWUCUr75Arw%2ejpg%3aNonHosted][img]https://pp.userapi.com/c631326/v631326562/272f3/VWUCUr75Arw.jpg[/img][/url]
+
+[h1]Additional donation methods:[/h1]
+4890 4942 6104 5140 - QIWI Visa Card
+4100 1138 6217 494 - Yandex Money
+
+[h1]Gamemode:[/h1]
+[i]You playing on standart Dota 2 map, Year Beast pick only. On both sides (Radiant and Dire) that means there's only Beast's in both team.[/i]
+
+[h1]Bots AI:[/h1]
+[i]You can't play with bots, as they don't have custom written AI, for this custom game!
+
+[h1]Year Beast:[/h1]
+[i]In original event by Valve, Beast's controlled by bot (AI) (same that uses in bot's matches) so you can't take control of it. But now you can,  most of Year Beast abilities have been recreated, include Combat, Speed and Support Paths more about Beast abilities you can read below.[/i]
+
+[h1]Beast Abilities:[/h1]
+[i]Most of them has been recreated, include Beast's paths. More of it below.[/i]
+
+[b]Combat Path:[/b]
+
+[b]Level 1:[/b]
+[i]Bash - The Beast gains a 12% chance to stun attacked enemies for 1 second.[/i] 
+
+[b]Level 2:[/b]
+[i]Spiked Carapace - When activated while above ground, Spiked Carapace reflects and negates damage dealt to Year Beast (max once from each source), as well as stunning the source of the damage.
+Berserker's Call - Year Beast taunts nearby enemy units, forcing them to attack him, while he gains bonus armor during the duration.[/i]
+
+[b]Level 3:[/b]
+[i]Greater Hex - The Beast unleashes a magical smoke that expands outward in a 1000 radius, turning enemy units into harmless pigs for 4 seconds.[/i]
+
+[b]Speed Path:[/b]
+
+[b]Level 1:[/b]
+[i]Attack Speed Aura - Allied units gain 30 attack speed in a 900 radius around the Beast.[/i]
+
+[b]Level 2:[/b]
+[i]Stampede - Year Beast leads all allies into a vicious charge causing them to move through units at max speed and stop any enemy units they trample. Trampled enemies take damage based on Year Beast's strength. Each enemy can be trampled once.[/i]
+
+[b]Level 3:[/b]
+ 
+[b]Support Path:[/b]
+
+[b]Level 1:[/b]
+[i]Healing Aura - Heals 10 HP every 2 seconds in a 1100 area of effect around the Beast.[/i]
+
+[b]Level 2:[/b]
+[i]Truesight - Grants truesight in a 1100 radius. The Beast also use Mekansm and Arcane Boots.[/i]
+Smoke Aura - While standing near the Beast, heroes are smoked.[/i]
+
+[b]Level 3:[/b]
+
+[b]Year Beast Ultimate:[/b]
+[i]Beast Aegis - Brings the Year Beast back to life with full health and mana 4 seconds after it dies, at the location where it died.[/i]
+
+[b]Attribute Bonus:[/b]
+[i]The Year Beast increases in strength, agility, and intelligence.[/i]
+
+[h1]Map:[/h1]
+[i]Map will be the same as in original 2015 Valve event. Include 1v1 and 3v3 versions![/i]
+
+[h1]TODO:[/h1]
+[i]Create - Refresher Aura
+Create - Resurrection Aura[/i]
+
+[h1]Big Thanks to:[/h1]
+[i][url=http://steamcommunity.com/profiles/76561197989684146]arsjac[/url] for: [url=http://steamcommunity.com/sharedfiles/filedetails/?id=725837387]Dota Classic (For edited version of CustomHeroSelection by Perryvw)[/url]
+[url=https://github.com/Perryvw]Perryvw[/url] for: [url=https://github.com/Perryvw/CustomHeroSelection]CustomHeroSelection[/url]
+[url=https://github.com/bmddota]BMD[/url] for: [url=https://github.com/bmddota/barebones]Barebones[/url]
+[url=http://moddota.com/forums/]ModDota Community[/url] for: Tutorials, Assets, Examples and etc.
+[url=https://github.com/Pizzalol/SpellLibrary]Authors of Spell Library[/url]for: Most abilities taken from this project, to recreate Year Beast one. Without it, there probably no Year Beast abilities or it can take much more time!
+[url=http://dota2.gamepedia.com/Dota_2_Wiki]Dota 2 Wikipedia[/url] for: Information that they have.
+[url=http://valvesoftware.com/]Valve[/url] for: Game, Original Gamemode, Engine, Models, Sounds, Textures and etc[/i]
